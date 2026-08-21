@@ -18,6 +18,9 @@ os.environ["GROQ_API_KEY"] = st.secrets.get("GROQ_API_KEY", "")
 os.environ["TAVILY_API_KEY"] = st.secrets.get("TAVILY_API_KEY", "")
 os.environ["LANGCHAIN_API_KEY"] = st.secrets.get("LANGCHAIN_API_KEY", "")
 
+GROQ_API_KEY: str = os.getenv("GROQ_API_KEY", "")
+TAVILY_API_KEY: str = os.getenv("TAVILY_API_KEY", "")
+LANGCHAIN_API_KEY: str = os.getenv("LANGCHAIN_API_KEY", "")
 # ── LangSmith Tracing ──────────────────────────────────────────────────────────
 LANGCHAIN_TRACING_V2: str = os.getenv("LANGCHAIN_TRACING_V2", "true")
 LANGCHAIN_ENDPOINT: str = os.getenv(
