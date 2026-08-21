@@ -1,6 +1,6 @@
 # I Built a Multi-Agent AI Research System — Here's Every Problem I Hit (And How I Fixed Them)
 
-> *Draft for Medium / Dev.to / LinkedIn — personalise and publish after your first live demo*
+
 
 ---
 
