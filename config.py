@@ -29,7 +29,7 @@ LANGCHAIN_ENDPOINT: str = os.getenv(
 LANGCHAIN_PROJECT: str = os.getenv("LANGCHAIN_PROJECT", "MARS-MultiAgent-Research")
 
 # ── LLM Configuration ─────────────────────────────────────────────────────────
-LLM_MODEL: str = "llama-3.3-70b-versatile"
+LLM_MODEL: str = "openai/gpt-oss-120b"
 LLM_TEMPERATURE: float = 0.7
 
 # ── Search Configuration ──────────────────────────────────────────────────────
