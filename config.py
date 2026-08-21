@@ -7,15 +7,16 @@ All modules import from here — never use os.environ directly.
 import os
 from pathlib import Path
 from dotenv import load_dotenv
+import streamlit as st
 
 # ── Load .env ──────────────────────────────────────────────────────────────────
 _ROOT = Path(__file__).parent
 load_dotenv(_ROOT / ".env", override=False)
 
-# ── API Keys ──────────────────────────────────────────────────────────────────
-GROQ_API_KEY: str = os.getenv("GROQ_API_KEY", "")
-TAVILY_API_KEY: str = os.getenv("TAVILY_API_KEY", "")
-LANGCHAIN_API_KEY: str = os.getenv("LANGCHAIN_API_KEY", "")
+# ── API Keys ─────────────────────────────────────────────────────────────────
+os.environ["GROQ_API_KEY"] = st.secrets.get("GROQ_API_KEY", "")
+os.environ["TAVILY_API_KEY"] = st.secrets.get("TAVILY_API_KEY", "")
+os.environ["LANGCHAIN_API_KEY"] = st.secrets.get("LANGCHAIN_API_KEY", "")
 
 # ── LangSmith Tracing ──────────────────────────────────────────────────────────
 LANGCHAIN_TRACING_V2: str = os.getenv("LANGCHAIN_TRACING_V2", "true")
