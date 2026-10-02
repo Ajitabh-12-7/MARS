@@ -11,7 +11,7 @@
 
 *Enter a topic → three agents search the web, extract facts from the pages, and write a report that may only use those facts.*
 
-**[🚀 Live Demo](https://ajitabh-12-7-mk-1-app.streamlit.app)** · **[📊 Architecture](#architecture)** · **[📈 Results](#results)** · **[⚠️ Limitations](#limitations)**
+**[🚀 Live Demo](https://ajitabh-12-7-mk-1-app.streamlit.app)** · **[📊 Architecture](#architecture)** · **[⚠️ Limitations](#limitations)**
 
 ---
 
@@ -179,19 +179,6 @@ MARS first ran on `llama-3.3-70b-versatile`. When that model was discontinued on
 
 ---
 
-## Results
-
-> Replace the bracketed values with numbers from your own test runs. Run at least 10 diverse topics and count.
-
-| Metric | Before fixes | After fixes |
-| --- | --- | --- |
-| Pages returning usable text | ~70% | [X]% |
-| Runs finishing with no rate-limit failure | [X]% | [X]% |
-| Claims supported by the page they cite (manual check of [N] reports) | n/a | [X]% |
-| Median time per report | n/a | [X] s |
-
-**Test set:** [N] topics, [describe: e.g. mix of tech, health, news].
-**How "supported" was judged:** [e.g. I opened each cited URL and checked the claim against the page text].
 
 ---
 
